@@ -14,7 +14,7 @@ interface TechCardProps {
 
 const TechCard: React.FC<TechCardProps> = ({ name, icon }) => {
   return (
-    <Card className='shadow-lg dark:bg-[#2e2e2e] hover:bg-slate-200'>
+    <Card className='shadow-lg dark:bg-[#232323] hover:bg-slate-200 dark:hover:bg-stone-700'>
       <CardContent>
         <Image 
           src={icon}
@@ -30,7 +30,7 @@ const TechCard: React.FC<TechCardProps> = ({ name, icon }) => {
 
 const Skills = () => {
   return (
-    <div id='skills' className={`w-full py-16 ${DMSans.className} text-center`}>
+    <div id='skills' className={`w-full py-24 ${DMSans.className} text-center`}>
       <h2 className="md:text-[60px] sm:text-[50px] text-[40px]">Skills</h2>
       <div className='mt-6 flex flex-wrap justify-center items-center gap-4'>
         {technologies.map((tech, index) => (

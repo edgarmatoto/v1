@@ -31,7 +31,7 @@ const Navbar = () => {
               {navList.map((item, index) => (
                 <NavigationMenuItem key={index}>
                   <Link href={`#${item.id}`} legacyBehavior passHref>
-                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} dark:bg-[#2e2e2e] text-xl`}>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} dark:bg-[#1c1c1c] text-xl`}>
                       {item.title}
                     </NavigationMenuLink>
                   </Link>

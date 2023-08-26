@@ -2,7 +2,7 @@ import { DMSans } from "@/fonts";
 
 const About = () => {
   return (
-    <div id="about" className="w-full py-16">
+    <div id="about" className="w-full py-24">
       <div className={`${DMSans.className}`}>
         <p
           className={`sm:text-lg text-lightSecondary dark:text-darkSecondary uppercase tracking-wider`}

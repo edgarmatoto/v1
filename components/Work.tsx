@@ -32,7 +32,7 @@ const ProjectsCard: React.FC<ProjectsCardProp> = ({
   updatedAt,
 }) => {
   return (
-    <Card>
+    <Card className='dark:bg-[#232323]'>
       <div className='w-full p-6 pb-0'>
         <Image 
           src={img}
@@ -51,7 +51,7 @@ const ProjectsCard: React.FC<ProjectsCardProp> = ({
         </div>
         <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
           <Link
-            className={buttonVariants({ variant: "outline" })}
+            className={`${buttonVariants({ variant: "outline" })} dark:bg-[#343434] hover:bg-slate-200 dark:hover:bg-stone-700`}
             href={repository}
           >
             <div className="flex justify-between items-center">
@@ -82,7 +82,7 @@ const ProjectsCard: React.FC<ProjectsCardProp> = ({
 
 const Work = () => {
   return (
-    <div id="work" className="w-full py-16 flex flex-col items-center">
+    <div id="work" className="w-full py-24 flex flex-col items-center">
       <div className={`${DMSans.className}`}>
         <p
           className={`sm:text-lg text-lightSecondary dark:text-darkSecondary uppercase tracking-wider`}
@@ -100,7 +100,7 @@ const Work = () => {
           and manage projects effectively.
         </p>
       </div>
-      <div className='bg-red-200 lg:w-[100vw] flex flex-wrap justify-center items-center gap-4'>
+      <div className='lg:w-[100vw] flex flex-wrap justify-center items-center gap-4 text-left'>
         {projects.map((item, index) => (
           <div className='mt-6 w-96 p-3' key={index}>
             <ProjectsCard

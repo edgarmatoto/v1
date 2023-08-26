@@ -49,9 +49,9 @@ const ProjectsCard: React.FC<ProjectsCardProp> = ({
             {description}
           </CardDescription>
         </div>
-        <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
+        <div className="flex items-center space-x-1 rounded-md">
           <Link
-            className={`${buttonVariants({ variant: "outline" })} dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-stone-600`}
+            className={`${buttonVariants({ variant: "outline" })} dark:bg-neutral-600 dark:hover:bg-stone-500`}
             href={repository}
           >
             <div className="flex justify-between items-center">

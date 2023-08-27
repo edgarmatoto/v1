@@ -22,7 +22,7 @@ export const ThemeToggle = () => {
 
   return (
     <button
-      className={`rounded-md hover:bg-stone-100 dark:hover:bg-stone-800 dark:hover:text-stone-50 mr-2`}
+      className={`rounded-md mr-2`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "light" ? <BsMoonFill size={26} /> : <BsSun size={26} />}
